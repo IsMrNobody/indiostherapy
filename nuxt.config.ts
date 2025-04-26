@@ -6,6 +6,16 @@ export default defineNuxtConfig({
   build: {
     transpile: ['vuetify'],
   },
+  // Agregamos Pinia como módulo para gestión de estado
+  modules: [
+    '@pinia/nuxt',
+  ],
+  // Configuración de variables de entorno accesibles en tiempo de ejecución
+  runtimeConfig: {
+    public: {
+      sweetApiUrl: process.env.NUXT_PUBLIC_SWEET_API_URL || 'http://localhost:3000'
+    }
+  },
   app: {
     head: {
       title: 'InDios Therapy - Terapias Corporales y Bienestar',
@@ -13,7 +23,6 @@ export default defineNuxtConfig({
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { 
-          hid: 'description', 
           name: 'description', 
           content: 'Centro especializado en terapias corporales y masajes terapéuticos para tu bienestar físico y mental.'
         }

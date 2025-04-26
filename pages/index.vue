@@ -53,7 +53,7 @@
                 color="primary"
                 variant="outlined"
                 class="mx-4"
-                :to="'/servicios'"
+                :to="service.page"
               >
                 Descubrir más
               </v-btn>
@@ -188,25 +188,25 @@
 <script setup>
 const services = [
   {
+    title: "Consultorio botanico",
+    description:
+      "Consultorio botánico con productos naturales y terapias para tu bienestar.",
+    image: "/manosplant.jpg",
+    page: "/botanic",
+  },
+  {
     title: "Masaje Terapéutico",
     description:
-      "Técnicas especializadas para aliviar el dolor y la tensión muscular, adaptadas a tus necesidades específicas.",
-    image:
-      "https://images.unsplash.com/photo-1519823551278-64ac92734fb1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
-  },
-  {
-    title: "Aromaterapia",
-    description:
-      "Experimenta el poder curativo de los aceites esenciales en un ambiente de completa relajación.",
+      "Técnicas especializadas para aliviar el dolor y la tensión muscular.",
     image:
       "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+    page: "/servicios",
   },
   {
-    title: "Reflexología",
-    description:
-      "Terapia holística que estimula puntos específicos para restaurar el equilibrio natural de tu cuerpo.",
-    image:
-      "https://images.unsplash.com/photo-1519824145371-296894a0daa9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+    title: "Productos Naturales",
+    description: "Productos naturales y terapias para tu bienestar y salud ",
+    image: "/product.jpg",
+    page: "/productos",
   },
 ];
 

@@ -5,7 +5,9 @@
       src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
       height="400"
     >
-      <div class="d-flex flex-column fill-height justify-center align-center text-center">
+      <div
+        class="d-flex flex-column fill-height justify-center align-center text-center"
+      >
         <div class="bg-surface bg-opacity-75 px-12 py-8 rounded-lg">
           <h1 class="text-h2 font-weight-light text-primary mb-4">
             Nuestros Servicios
@@ -20,29 +22,45 @@
     <!-- Services Section -->
     <v-container class="py-16">
       <v-row>
-        <v-col v-for="service in services" :key="service.title" cols="12" class="mb-16">
-          <v-row align="center" :class="service.reverse ? 'flex-row-reverse' : ''">
+        <v-col
+          v-for="service in services"
+          :key="service.title"
+          cols="12"
+          class="mb-16"
+        >
+          <v-row
+            align="center"
+            :class="service.reverse ? 'flex-row-reverse' : ''"
+          >
             <v-col cols="12" md="6">
-              <v-img
-                :src="service.image"
-                height="400"
-                cover
-                class="rounded-lg"
-              >
+              <v-img :src="service.image" height="400" cover class="rounded-lg">
                 <template v-slot:placeholder>
                   <v-row align="center" justify="center" class="fill-height">
-                    <v-progress-circular indeterminate color="primary"></v-progress-circular>
+                    <v-progress-circular
+                      indeterminate
+                      color="primary"
+                    ></v-progress-circular>
                   </v-row>
                 </template>
               </v-img>
             </v-col>
             <v-col cols="12" md="6" class="px-md-8">
-              <h2 class="text-h3 font-weight-light text-primary mb-6">{{ service.title }}</h2>
-              <p class="text-body-1 text-medium-emphasis mb-6">{{ service.description }}</p>
+              <h2 class="text-h3 font-weight-light text-primary mb-6">
+                {{ service.title }}
+              </h2>
+              <p class="text-body-1 text-medium-emphasis mb-6">
+                {{ service.description }}
+              </p>
               <v-list>
-                <v-list-item v-for="benefit in service.benefits" :key="benefit" class="px-0">
+                <v-list-item
+                  v-for="benefit in service.benefits"
+                  :key="benefit"
+                  class="px-0"
+                >
                   <template v-slot:prepend>
-                    <v-icon color="primary" class="mr-4">mdi-check-circle</v-icon>
+                    <v-icon color="primary" class="mr-4"
+                      >mdi-check-circle</v-icon
+                    >
                   </template>
                   <v-list-item-title>{{ benefit }}</v-list-item-title>
                 </v-list-item>
@@ -70,15 +88,11 @@
             ¿Listo para comenzar tu viaje hacia el bienestar?
           </h2>
           <p class="text-body-1 text-primary mb-8">
-            Nuestro equipo de terapeutas profesionales está aquí para guiarte en tu camino hacia una mejor salud y bienestar.
-            Contáctanos hoy para programar tu primera sesión.
+            Nuestro equipo de terapeutas profesionales está aquí para guiarte en
+            tu camino hacia una mejor salud y bienestar. Contáctanos hoy para
+            programar tu primera sesión.
           </p>
-          <v-btn
-            color="primary"
-            variant="outlined"
-            size="large"
-            to="/contacto"
-          >
+          <v-btn color="primary" variant="outlined" size="large" to="/contacto">
             Contactar Ahora
           </v-btn>
         </v-col>
@@ -90,50 +104,54 @@
 <script setup>
 const services = [
   {
-    title: 'Masaje Terapéutico',
-    description: 'Nuestro masaje terapéutico está diseñado para aliviar el dolor muscular, reducir el estrés y mejorar la circulación. Cada sesión se personaliza según tus necesidades específicas, utilizando una combinación de técnicas probadas.',
-    image: 'https://images.unsplash.com/photo-1519823551278-64ac92734fb1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
+    title: "Masaje Terapéutico",
+    description:
+      "Nuestro masaje terapéutico está diseñado para aliviar el dolor muscular, reducir el estrés y mejorar la circulación. Cada sesión se personaliza según tus necesidades específicas, utilizando una combinación de técnicas probadas.",
+    image: "/terapeuta1.png",
     benefits: [
-      'Alivio del dolor muscular y articular',
-      'Reducción del estrés y la ansiedad',
-      'Mejora de la circulación sanguínea',
-      'Aumento de la flexibilidad'
+      "Alivio del dolor muscular y articular",
+      "Reducción del estrés y la ansiedad",
+      "Mejora de la circulación sanguínea",
+      "Aumento de la flexibilidad",
     ],
-    reverse: false
+    reverse: false,
   },
   {
-    title: 'Aromaterapia',
-    description: 'La aromaterapia combina el poder curativo de los aceites esenciales con técnicas de masaje suave para crear una experiencia profundamente relajante y terapéutica. Cada aceite se selecciona cuidadosamente por sus propiedades específicas.',
-    image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
+    title: "Aromaterapia",
+    description:
+      "La aromaterapia combina el poder curativo de los aceites esenciales con técnicas de masaje suave para crear una experiencia profundamente relajante y terapéutica. Cada aceite se selecciona cuidadosamente por sus propiedades específicas.",
+    image: "/mila2.jpg",
     benefits: [
-      'Equilibrio emocional y mental',
-      'Mejora del sueño y relajación',
-      'Fortalecimiento del sistema inmunológico',
-      'Desintoxicación natural'
+      "Equilibrio emocional y mental",
+      "Mejora del sueño y relajación",
+      "Fortalecimiento del sistema inmunológico",
+      "Desintoxicación natural",
     ],
-    reverse: true
+    reverse: true,
   },
   {
-    title: 'Reflexología',
-    description: 'La reflexología es una terapia holística que estimula puntos específicos en los pies, manos y orejas que corresponden a diferentes órganos y sistemas del cuerpo. Esta técnica promueve la sanación natural y el equilibrio.',
-    image: 'https://images.unsplash.com/photo-1519824145371-296894a0daa9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
+    title: "Reflexología",
+    description:
+      "La reflexología es una terapia holística que estimula puntos específicos en los pies, manos y orejas que corresponden a diferentes órganos y sistemas del cuerpo. Esta técnica promueve la sanación natural y el equilibrio.",
+    image: "/terapeuta2.jpg",
     benefits: [
-      'Reducción del estrés y la tensión',
-      'Mejora de la circulación',
-      'Equilibrio energético',
-      'Promoción de la auto-sanación'
+      "Reducción del estrés y la tensión",
+      "Mejora de la circulación",
+      "Equilibrio energético",
+      "Promoción de la auto-sanación",
     ],
-    reverse: false
-  }
-]
+    reverse: false,
+  },
+];
 
 useHead({
-  title: 'Servicios - InDios Therapy',
+  title: "Servicios - InDios Therapy",
   meta: [
     {
-      name: 'description',
-      content: 'Descubre nuestra amplia gama de servicios terapéuticos, incluyendo masajes, aromaterapia y reflexología. Tratamientos personalizados para tu bienestar.'
-    }
-  ]
-})
+      name: "description",
+      content:
+        "Descubre nuestra amplia gama de servicios terapéuticos, incluyendo masajes, aromaterapia y reflexología. Tratamientos personalizados para tu bienestar.",
+    },
+  ],
+});
 </script>

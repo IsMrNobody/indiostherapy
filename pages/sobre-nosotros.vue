@@ -83,7 +83,7 @@
     <!-- Nuestro Equipo -->
     <v-container class="py-12">
       <h2 class="text-center text-h4 font-weight-light text-primary mb-10">
-        Nuestros Terapeutas
+        Terapeutas
       </h2>
       <v-row>
         <v-col
@@ -117,10 +117,9 @@
       <v-row justify="center" align="center">
         <v-col cols="12" md="6" lg="5">
           <v-img
-            src="https://images.unsplash.com/photo-1531685250784-7569952593d2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80"
-            height="450"
-            class="rounded-lg"
-            cover
+            src="/inD-white.png"
+            width="250"
+            class="rounded-lg mx-auto"
           ></v-img>
         </v-col>
         <v-col cols="12" md="6" lg="5">
@@ -185,26 +184,24 @@
 <script setup>
 const therapists = [
   {
-    name: "Elena Martínez",
+    name: "Milagro Navas",
     specialty: "Terapeuta Holística",
-    bio: "Con más de 15 años de experiencia, Elena combina la sabiduría de las plantas medicinales con técnicas de masaje terapéutico para crear experiencias de sanación únicas.",
-    image:
-      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80",
+    bio: "Con más de 15 años de experiencia, Milagro combina la sabiduría de las plantas medicinales con técnicas de masaje terapéutico para crear experiencias de sanación únicas.",
+    image: "/mila2.jpg",
   },
-  {
-    name: "Miguel Sánchez",
-    specialty: "Especialista en Masaje Tailandés",
-    bio: "Miguel ha perfeccionado sus técnicas de masaje en Tailandia, donde aprendió a trabajar con las líneas energéticas del cuerpo para liberar bloqueos y restaurar el flujo natural.",
-    image:
-      "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80",
-  },
-  {
-    name: "Laura Torres",
-    specialty: "Aromaterapia y Reflexología",
-    bio: "Apasionada por los aceites esenciales, Laura crea mezclas personalizadas que complementan sus sesiones de reflexología para un enfoque verdaderamente holístico.",
-    image:
-      "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80",
-  },
+  //   {
+  //     name: "Milagro Navas",
+  //     specialty: "Especialista en Masaje Tailandés",
+  //     bio: "Milagro ha perfeccionado sus técnicas de masaje en Tailandia, donde aprendió a trabajar con las líneas energéticas del cuerpo para liberar bloqueos y restaurar el flujo natural.",
+  //     image: "/mila.jpg",
+  //   },
+  //   {
+  //     name: "Laura Torres",
+  //     specialty: "Aromaterapia y Reflexología",
+  //     bio: "Apasionada por los aceites esenciales, Laura crea mezclas personalizadas que complementan sus sesiones de reflexología para un enfoque verdaderamente holístico.",
+  //     image:
+  //       "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80",
+  //   },
 ];
 
 const testimonials = [

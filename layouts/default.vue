@@ -14,6 +14,8 @@
         <v-btn to="/servicios" text color="primary">Servicios</v-btn>
         <v-btn to="/sobre-nosotros" text color="primary">Sobre Nosotros</v-btn>
         <v-btn to="/productos" text color="primary">Productos</v-btn>
+        <v-btn to="/botanic" text color="success">Jardín Botánico</v-btn>
+        <!-- <v-btn to="/medical" text color="success">Remedios Naturales</v-btn> -->
         <v-btn to="/contacto" text color="primary">Contacto</v-btn>
       </div>
     </v-app-bar>
@@ -41,6 +43,16 @@
           to="/productos"
           title="Productos"
           color="primary"
+        ></v-list-item>
+        <v-list-item
+          to="/botanic"
+          title="Jardín Botánico"
+          color="success"
+        ></v-list-item>
+        <v-list-item
+          to="/medical"
+          title="Remedios Naturales"
+          color="success"
         ></v-list-item>
         <v-list-item
           to="/contacto"
