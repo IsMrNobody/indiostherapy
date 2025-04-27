@@ -13,7 +13,7 @@ export default defineNuxtConfig({
   // Configuración de variables de entorno accesibles en tiempo de ejecución
   runtimeConfig: {
     public: {
-      sweetApiUrl: process.env.NUXT_PUBLIC_SWEET_API_URL || 'http://localhost:3000'
+      sweetApiUrl: process.env.SWEET_API_URL || 'http://localhost:3000'
     }
   },
   app: {
