@@ -2,7 +2,7 @@
   <div>
     <!-- Hero Section -->
     <v-parallax
-      src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+      src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
       height="400"
     >
       <div
@@ -107,7 +107,8 @@ const services = [
     title: "Masaje Terapéutico",
     description:
       "Nuestro masaje terapéutico está diseñado para aliviar el dolor muscular, reducir el estrés y mejorar la circulación. Cada sesión se personaliza según tus necesidades específicas, utilizando una combinación de técnicas probadas.",
-    image: "/terapeuta1.png",
+    image:
+      "https://res.cloudinary.com/dku13l2ep/image/upload/v1745765044/JARTATE/Ciudad/lecheria/indios/imgs/terapeuta1_q4muhu.png",
     benefits: [
       "Alivio del dolor muscular y articular",
       "Reducción del estrés y la ansiedad",
@@ -120,7 +121,8 @@ const services = [
     title: "Aromaterapia",
     description:
       "La aromaterapia combina el poder curativo de los aceites esenciales con técnicas de masaje suave para crear una experiencia profundamente relajante y terapéutica. Cada aceite se selecciona cuidadosamente por sus propiedades específicas.",
-    image: "/mila2.jpg",
+    image:
+      "https://res.cloudinary.com/dku13l2ep/image/upload/v1745765043/JARTATE/Ciudad/lecheria/indios/imgs/mila2_nyq4ji.jpg",
     benefits: [
       "Equilibrio emocional y mental",
       "Mejora del sueño y relajación",
@@ -133,7 +135,8 @@ const services = [
     title: "Reflexología",
     description:
       "La reflexología es una terapia holística que estimula puntos específicos en los pies, manos y orejas que corresponden a diferentes órganos y sistemas del cuerpo. Esta técnica promueve la sanación natural y el equilibrio.",
-    image: "/terapeuta2.jpg",
+    image:
+      "https://res.cloudinary.com/dku13l2ep/image/upload/v1745765044/JARTATE/Ciudad/lecheria/indios/imgs/terapeuta2_pxbumi.jpg",
     benefits: [
       "Reducción del estrés y la tensión",
       "Mejora de la circulación",

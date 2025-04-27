@@ -117,7 +117,7 @@
       <v-row justify="center" align="center">
         <v-col cols="12" md="6" lg="5">
           <v-img
-            src="/inD-white.png"
+            src="https://res.cloudinary.com/dku13l2ep/image/upload/v1711725270/JARTATE/Ciudad/lecheria/indios/inD-white_ufc8ol.png"
             width="250"
             class="rounded-lg mx-auto"
           ></v-img>

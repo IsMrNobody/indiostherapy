@@ -2,7 +2,7 @@
   <div>
     <!-- Hero Section -->
     <v-parallax
-      src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+      src="https://res.cloudinary.com/dku13l2ep/image/upload/v1745768100/JARTATE/Ciudad/lecheria/indios/imgs/pexels-mart-production-8450508_qmlaau.jpg"
       height="400"
     >
       <div

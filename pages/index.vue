@@ -2,7 +2,7 @@
   <div>
     <!-- Hero Section -->
     <v-parallax
-      src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+      src="https://res.cloudinary.com/dku13l2ep/image/upload/v1745764955/JARTATE/Ciudad/lecheria/indios/imgs/pexels-yaroslav-shuraev-6811387_1_e5rnlq.png"
       height="600"
     >
       <div
@@ -100,7 +100,7 @@
             <v-col cols="12" sm="6" md="4">
               <v-card class="mx-auto rounded-lg" elevation="2" theme="light">
                 <v-img
-                  src="https://images.unsplash.com/photo-1595981267035-7b04ca84a82d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+                  src="https://res.cloudinary.com/dku13l2ep/image/upload/v1745767130/JARTATE/Ciudad/lecheria/indios/imgs/pexels-karolina-grabowska-4041392_qnwvuj.jpg"
                   height="200"
                   cover
                   class="rounded-t-lg"
@@ -127,7 +127,7 @@
             <v-col cols="12" sm="6" md="4">
               <v-card class="mx-auto rounded-lg" elevation="2" theme="light">
                 <v-img
-                  src="https://images.unsplash.com/photo-1607006344380-b6775a0824ce?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+                  src="https://res.cloudinary.com/dku13l2ep/image/upload/v1745765136/JARTATE/Ciudad/lecheria/indios/imgs/1745709865880_isyaov.jpg"
                   height="200"
                   cover
                   class="rounded-t-lg"
@@ -154,7 +154,7 @@
             <v-col cols="12" sm="6" md="4">
               <v-card class="mx-auto rounded-lg" elevation="2" theme="light">
                 <v-img
-                  src="https://images.unsplash.com/photo-1608263153703-caa6b0fd7c7c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+                  src="https://images.pexels.com/photos/7664872/pexels-photo-7664872.jpeg?auto=compress&cs=tinysrgb&w=600"
                   height="200"
                   cover
                   class="rounded-t-lg"
@@ -191,7 +191,8 @@ const services = [
     title: "Consultorio botanico",
     description:
       "Consultorio botánico con productos naturales y terapias para tu bienestar.",
-    image: "/manosplant.jpg",
+    image:
+      "https://res.cloudinary.com/dku13l2ep/image/upload/v1745764455/JARTATE/Ciudad/lecheria/indios/imgs/manosplant_dqf8i8.png",
     page: "/botanic",
   },
   {
@@ -205,7 +206,8 @@ const services = [
   {
     title: "Productos Naturales",
     description: "Productos naturales y terapias para tu bienestar y salud ",
-    image: "/product.jpg",
+    image:
+      "https://res.cloudinary.com/dku13l2ep/image/upload/v1745765136/JARTATE/Ciudad/lecheria/indios/imgs/1745709865880_isyaov.jpg",
     page: "/productos",
   },
 ];
