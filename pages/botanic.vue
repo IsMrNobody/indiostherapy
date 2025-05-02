@@ -187,6 +187,7 @@ import PlantSlider from "~/components/PlantSlider.vue";
 import { uploadToCloudinary } from "~/utils/uploadToCloudinary.js";
 import { useRoute } from "vue-router";
 import { useStore } from "vuex";
+import { useRuntimeConfig } from "#app";
 
 // Inicializar el store
 // const store = useStore();
@@ -211,7 +212,7 @@ const showImageModal = ref(false);
 const showResult = ref(true);
 
 // Configuración de la API de Gemini
-const API_KEY = process.env.API_GEM; // Usando la variable de entorno
+const API_KEY = useRuntimeConfig().public.API_GEM;
 const genAI = new GoogleGenAI({ apiKey: API_KEY });
 
 const CLOUDINARY_CLOUD_NAME = "dku13l2ep"; // <-- Cloud name actualizado

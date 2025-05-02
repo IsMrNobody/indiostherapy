@@ -66,6 +66,7 @@
 import { GoogleGenAI } from "@google/genai";
 import GrowingPlantAnimation from "../components/GrowingPlantAnimation.vue";
 import MedicalResult from "../components/MedicalResult.vue";
+import { useRuntimeConfig } from "nuxt/app";
 
 export default {
   components: {
@@ -80,7 +81,7 @@ export default {
       generatingMore: false,
       plantLoading: false,
       // Configuración de la API de Gemini
-      API_KEY: process.env.API_GEM,
+      API_KEY: useRuntimeConfig().public.API_GEM,
       genAI: null,
       // Variables locales como respaldo por si el store no está disponible
       _loading: false,
