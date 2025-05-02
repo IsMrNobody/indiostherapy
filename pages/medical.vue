@@ -80,7 +80,7 @@ export default {
       generatingMore: false,
       plantLoading: false,
       // Configuración de la API de Gemini
-      API_KEY: "AIzaSyDE70lAamMGPuy-U-cWnDzQvjC_4CzEo4A",
+      API_KEY: process.env.API_GEM,
       genAI: null,
       // Variables locales como respaldo por si el store no está disponible
       _loading: false,

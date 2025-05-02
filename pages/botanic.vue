@@ -211,8 +211,7 @@ const showImageModal = ref(false);
 const showResult = ref(true);
 
 // Configuración de la API de Gemini
-// const API_KEY = process.env.API_GEM; // Necesitarás obtener una clave de API de Google AI Studio
-const API_KEY = "AIzaSyDE70lAamMGPuy-U-cWnDzQvjC_4CzEo4A"; // Necesitarás obtener una clave de API de Google AI Studio
+const API_KEY = process.env.API_GEM; // Usando la variable de entorno
 const genAI = new GoogleGenAI({ apiKey: API_KEY });
 
 const CLOUDINARY_CLOUD_NAME = "dku13l2ep"; // <-- Cloud name actualizado
