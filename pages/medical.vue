@@ -232,7 +232,7 @@ export default {
         if (this.API_KEY) {
           // Usar el modelo Gemini para información textual
           const textModel = this.genAI.models.generateContent({
-            model: "gemini-3-flash-preview",
+            model: "gemini-2.5-flash",
             contents: prompt,
           });
 
@@ -337,7 +337,7 @@ export default {
 
         // Usar el modelo Gemini para obtener plantas alternativas
         const textModel = this.genAI.models.generateContent({
-          model: "gemini-3-flash-preview",
+          model: "gemini-2.5-flash",
           contents: prompt,
         });
 
