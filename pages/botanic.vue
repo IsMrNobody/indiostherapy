@@ -239,7 +239,7 @@ async function generatePlantImage(plantName) {
 
     // Usar el modelo de generación de imágenes de Gemini
     const response = await genAI.models.generateContent({
-      model: "gemini-2.0-flash-exp-image-generation",
+      model: "gemini-3-pro-image-preview",
       contents: prompt,
       config: {
         responseModalities: [Modality.TEXT, Modality.IMAGE],
@@ -334,7 +334,7 @@ async function searchPlant(manualTerm = null) {
     if (API_KEY) {
       // Usar el modelo Gemini para información textual
       const textModel = genAI.models.generateContent({
-        model: "gemini-2.0-flash",
+        model: "gemini-3-flash-preview",
         contents: prompt,
       });
 
