@@ -52,7 +52,7 @@
 import { defineProps, defineEmits, ref, watch, onMounted } from "vue";
 import { GoogleGenAI } from "@google/genai";
 
-const API_KEY = "AIzaSyDE70lAamMGPuy-U-cWnDzQvjC_4CzEo4A"; // Necesitarás obtener una clave de API de Google AI Studio
+const API_KEY = "AIzaSyBK2OnFO1A7zPYJHmyMeDrF9p1LOoyrhgc"; // Necesitarás obtener una clave de API de Google AI Studio
 const genAI = new GoogleGenAI({ apiKey: API_KEY });
 
 const props = defineProps({
